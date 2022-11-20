@@ -9,14 +9,8 @@ self.addEventListener("install", event => {
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
 			return cache.addAll([
-				"logo_144x144.png",
-				"logo_168x168.png",
-				"logo_192x192.png",
-				"logo_32x32.png",
-				"logo_48x48.png",
-				"logo_512x512.png",
-				"logo_72x72.png",
-				"logo_96x96.png",
+				"android-chrome-192x192.png",
+				"android-chrome-512x512.png",
 				"manifest.json",
 				"index.html",
 				"javatari.js",
