@@ -2,7 +2,7 @@
 	"name": "Javatari",
 	"short_name": "Javatari",
 	"display": "standalone",
-	"start_url": ".",
+	"start_url": "https://zibri.github.io/javatari.js/pwa/",
 	"theme_color": "#000",
 	"background_color": "#000",
 	"icons": [
