@@ -25,7 +25,7 @@ self.addEventListener("install", event => {
 self.addEventListener("activate", event => {
 	// Delete any non-current cache
 	event.waitUntil(
-		caches.delete(cacheName);
+		caches.delete(cacheName)
 	);
 });
 
