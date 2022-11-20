@@ -2,8 +2,7 @@
 	"name": "Javatari",
 	"short_name": "Javatari",
 	"display": "standalone",
-	"start_url": ".",
-	"scope": ".",
+	"start_url": "./",
 	"theme_color": "#000",
 	"background_color": "#000",
 	"icons": [
