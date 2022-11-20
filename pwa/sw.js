@@ -1,6 +1,6 @@
 const cacheName = "javatari"; // Change value to force update
 
-const version = "V1.001";
+const version = "V1.002";
 
 self.addEventListener("install", event => {
 	// Kick out the old service worker
