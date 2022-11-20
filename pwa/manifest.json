@@ -2,7 +2,7 @@
 	"name": "Javatari",
 	"short_name": "Javatari",
 	"display": "standalone",
-	"start_url": "./?utm_source=pwa_install",
+	"start_url": ".",
 	"scope": ".",
 	"theme_color": "#000",
 	"background_color": "#000",
