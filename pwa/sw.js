@@ -9,6 +9,8 @@ self.addEventListener("install", event => {
 	event.waitUntil(
 		caches.open(cacheName).then(cache => {
 			return cache.addAll([
+				"android-chrome-64x64.png",
+				"android-chrome-96x96.png",
 				"android-chrome-192x192.png",
 				"android-chrome-512x512.png",
 				"manifest.json",
