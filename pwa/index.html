@@ -188,6 +188,10 @@
         <script>
             Javatari.AUTO_POWER_ON_DELAY = 1;
             Javatari.SCREEN_FULLSCREEN_MODE = 1;
+            if (navigator.userAgent.indexOf("LGE")!=-1) {
+                document.documentElement.onmousedown=()=>Javatari.room.consoleControls.keyDown(new KeyboardEvent('keypress',  {'keyCode':46}));
+                document.documentElement.onmouseup=()=>Javatari.room.consoleControls.keyUp(new KeyboardEvent('keypress',  {'keyCode':46}));
+            }
         </script>
     </body>
 </html>
