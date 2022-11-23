@@ -190,7 +190,9 @@
             Javatari.SCREEN_FULLSCREEN_MODE = 1;
             if (navigator.userAgent.indexOf("LGE")!=-1) {
                 Javatari.room.screen.setFullscreen=()=>{}
-                setTimeout(()=>{Javatari.SCREEN_FULLSCREEN_MODE = 0;Javatari.SCREEN_CONTROL_BAR=1;},3000)
+                Javatari.SCREEN_FULLSCREEN_MODE = 0;
+                Javatari.SCREEN_CONTROL_BAR=1;
+                //setTimeout(()=>{Javatari.SCREEN_FULLSCREEN_MODE = 0;Javatari.SCREEN_CONTROL_BAR=1;},3000)
             }
         </script>
     </body>
