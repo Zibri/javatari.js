@@ -187,35 +187,11 @@
         <script src="./javatari.js"></script>
         <script>
             Javatari.AUTO_POWER_ON_DELAY = 1;
+            Javatari.SCREEN_CONTROL_BAR = 1;
             Javatari.SCREEN_FULLSCREEN_MODE = 1;
             if (navigator.userAgent.indexOf("LGE")!=-1) {
-                document.documentElement.onmousedown=()=>Javatari.room.consoleControls.keyDown(new KeyboardEvent('keypress',  {'keyCode':46}));
-                document.documentElement.onmouseup=()=>Javatari.room.consoleControls.keyUp(new KeyboardEvent('keypress',  {'keyCode':46}));
-                Javatari.room.screen.showOSD = function(message, overlap, error) {
-        if (osdTimeout) clearTimeout(osdTimeout);
-        if (!message) {
-            osd.style.transition = "all 0.15s linear";
-            osd.style.top = "-29px";
-            osd.style.opacity = 0;
-            osdShowing = false;
-            return;
-        }
-        if (overlap || !osdShowing) {
-            osd.innerHTML = message;
-            osd.style.color = error ? "rgb(255, 60, 40)" : "rgb(0, 255, 0)";
-        }
-        osd.style.transition = "none";
-        osd.style.top = "15px";
-        osd.style.opacity = 1;
-        osdShowing = true;
-
-        var availWidth = canvasOuter.clientWidth - 30;      //  message width - borders
-        var width = osd.clientWidth;
-        var scale = width < availWidth ? 1 : availWidth / width;
-        osd.style.transform = "scale(" + scale.toFixed(4) + ")";
-
-        //osdTimeout = setTimeout(hideOSD, OSD_TIME);
-    };            }
+                Javatari.SCREEN_CONTROL_BAR=0;
+            }
         </script>
     </body>
 </html>
