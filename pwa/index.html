@@ -18,6 +18,30 @@
         <meta name="msapplication-TileColor" content="#000000">
 
         <style>
+            @keyframes flicker {
+                50% {
+                    top: -1px
+                }
+            }
+
+            .crt::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                content: " ";
+                display: block;
+                filter: url(#SphereMapTest);
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA+SURBVBhXATMAzP8BEg8X9RcBALDkIgT2AOQw7AAfDhfCnxMbQCOvL0APS+9AAvkBARbL/wAU+9/+BADu1gOpDhJoiYJh1wAAAABJRU5ErkJggg==");
+                opacity: 0.6;
+                background-repeat: repeat;
+                z-index: 99;
+                pointer-events: none;
+//                filter: contrast(80%);
+                animation: flicker .08s step-end infinite
+            }
+
             html, body {
                 margin: 0;
                 padding: 0;
